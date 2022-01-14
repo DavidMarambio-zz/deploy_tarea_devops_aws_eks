@@ -1,13 +1,3 @@
-variable "profile" {
-  default     = "terraform"
-  description = "AWS User"
-}
-
-variable "region" {
-  default     = "us-east-1"
-  description = "AWS region"
-}
-
 variable "cidr" {
   default     = "192.168.0.0/16"
   description = "CIDR blocks"
@@ -53,32 +43,6 @@ variable "az_private_2" {
   description = "Availability zone for the subnet private_2"
 }
 
-variable "kubernetes_version" {
-  default     = "1.21"
-  description = "Kubernetes version"
-}
-
-variable "name" {
-  default     = "python-project"
-  description = "Project name"
-}
-
-variable "app_name" {
-  default     = "python-project"
-  description = "Application name"
-}
-
-variable "namespace" {
-  default     = "python-project"
-  description = "Namespace of the Project"
-}
-
-variable "secret_key" {
-  default     = "89C6F2ECB53A35BF7D16530FE"
-  description = "App Secret Key"
-}
-
-variable "docker_image" {
-  default     = "ghcr.io/davidmarambio/tarea_devops:latest"
-  description = "App container image"
+variable "cluster_name" {
+  description = "Name of the clustes EKS"
 }
